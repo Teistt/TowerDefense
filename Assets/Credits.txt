@@ -1,0 +1,21 @@
+animations - Mixamo - free for commercial use
+turrets meshes - Brackeys - The Unlicense
+flower and trees - KenneyGA (itch.io) - Creative Commons 1
+
+sounds clips(freesound.org):
+sf3-sfx-menu-validate.wav - broumbroum - attribution 3.0
+sf3-sfx-menu-back.wav - broumbroum - attribution 3.0
+sf3-sfx-menu-select.wav - broumbroum - attribution 3.0
+house-builing.mp3 - faseer - cc0
+Whoosh tonal build up reverb bell heal.wav - ryusa - attribution 3.0
+bomb.mp3 - Taira Komori - attribution 3.0
+Air Rifle Shot.wav - aidansamuel - CC0
+Steam - qubodup - CC0
+Power Spark - qubodup - attribution 3.0
+ 2015_2016 » MALFOY_Florian_2015_2016_Gunshot.wav - univ_lyon3 - CC0
+ 
+ music
+ Goliath.mp3 - Scott Buckley - Creative Commons 4
+ 
+ 
+ ? three-red-hearts-prepare-to-dev - Tallbeard Studios (itch.io) - Creative Commons 4

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0edad50d33e0b46a88fae46df18155, type: 3}
+  m_Name: LMTurret
+  m_EditorClassIdentifier: 
+  turretName: Missile Launcher
+  icon: {fileID: 21300000, guid: 42c04a073966dce4eb4b5509cf929c32, type: 3}
+  prefab: {fileID: 7851793799781815486, guid: f91770997337335419349c93eb183067, type: 3}
+  upgradedPrefab: {fileID: 7851793799781815486, guid: fc863f1d0f38bc046b32689bbbe5aa6e, type: 3}
+  cost: 250
+  upgradeCost: 500

@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4175448975458128217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4175448975458128231}
+  - component: {fileID: 4175448975458128226}
+  - component: {fileID: 4175448975458128228}
+  - component: {fileID: 4175448975458128229}
+  - component: {fileID: 4175448975458128227}
+  - component: {fileID: 9035495625028425939}
+  m_Layer: 0
+  m_Name: InfiniteGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4175448975458128231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175448975458128217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4175448975458128226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175448975458128217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e715b1d5292fc06479222e01dd4ba728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 3641319557369238182, guid: 01463eaf5cb9c3b42b5454cbc76773ee, type: 3}
+  winOverUI: {fileID: 3424594531955257783, guid: db037211fb958ca44b4541749a92569b, type: 3}
+  levelToUnlock: 2
+--- !u!114 &4175448975458128228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175448975458128217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58557b8c1d7e7ef4e9a2f40f7ff7126d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeUI: {fileID: 0}
+  sounds: {fileID: 878531916172409971, guid: 4b15b23563748ae448c727071e24a37e, type: 3}
+--- !u!114 &4175448975458128229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175448975458128217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14855d65cf322c8449c7d9c17d09d46d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 300
+  startLives: 3
+--- !u!114 &4175448975458128227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175448975458128217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3723f0bd3f5fc7b488b965c1192b7016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 0}
+  sceneFader: {fileID: 0}
+  mainMenu: MainMenu
+--- !u!114 &9035495625028425939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175448975458128217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d124386ba2549b458b8c9f02e351467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 3848151969552096641, guid: b6804ac2b9109e54cbbb560dce75b3df, type: 3}
+  spawnPoint: {fileID: 0}
+  timeNextWave: 5
+  rate: 1
+  enemiesPrefab:
+  - {fileID: 4072520753908651821, guid: 4b4dd630cf53faa44aea7cef99809cb0, type: 3}
+  - {fileID: 4072520753908651821, guid: ca3e4fd0d72c43a4eaca5999d6a6ca01, type: 3}
+  - {fileID: 4072520753908651821, guid: 07efb8d6ede7d4243abe985b0dc02935, type: 3}
+  - {fileID: 4072520753908651821, guid: 85da0c74295ea0f419961b2ac918e4b6, type: 3}
+  - {fileID: 4072520753908651821, guid: 14a92ad9ef0f4464db525bd991072c7a, type: 3}
+  - {fileID: 4072520753908651821, guid: 48a09773752c6774184f876accb92ce4, type: 3}
+  livesTextPro: {fileID: 0}
+  remainRoundsTextPro: {fileID: 0}
+  waveTimeTextPro: {fileID: 0}
+  moneyTextPro: {fileID: 0}
+  waveEnemies: []
+  waveIndex: 0

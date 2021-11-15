@@ -111,7 +111,7 @@ public class Turret : MonoBehaviour
             else
             {
                 //On tire
-                Shoot();
+                PooledShoot();
 
                 fireCtdw = 1 / fireRate;
                 //firerate correspond à nb coup/s; donc le cooldown est l'inverse
@@ -147,6 +147,28 @@ public class Turret : MonoBehaviour
         //On instantie la boullette a la position firePoint
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
+
+        //on récupère son composant
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+        //Si on a qqe chose de non nul on lui indique quelle target cibler
+        if (bullet != null)
+        {
+            bullet.Seek(target);
+            bullet.SetOrigin(transform.position);
+        }
+    }
+    void PooledShoot()
+    {
+        //On instantie la boullette a la position firePoint
+        //GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+        GameObject bulletGO = ObjectPool.SharedInstance.GetPooledObjects();
+        if (bulletGO != null)
+        {
+            bulletGO.transform.position = firePoint.position;
+            bulletGO.transform.rotation = firePoint.rotation;
+            bulletGO.SetActive(true);
+        }
 
         //on récupère son composant
         Bullet bullet = bulletGO.GetComponent<Bullet>();

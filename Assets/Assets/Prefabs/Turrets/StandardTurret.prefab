@@ -125,6 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1034372214424120545}
   - component: {fileID: 92153181063798844}
+  - component: {fileID: 7613382657738589623}
   m_Layer: 0
   m_Name: StandardTurret
   m_TagString: Untagged
@@ -173,6 +174,21 @@ MonoBehaviour:
   enemyTag: Enemy
   partToRotate: {fileID: 312543278539902615}
   rotSpeed: 10
+--- !u!114 &7613382657738589623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365078134010738267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace22b602cd28dc44819b305f29af518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 2725594846100488049, guid: bc506b913e8c8f241b8fe7ce393f0de4, type: 3}
+  amountToPool: 5
 --- !u!1 &2910606651620055202
 GameObject:
   m_ObjectHideFlags: 0

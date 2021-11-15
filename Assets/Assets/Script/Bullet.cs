@@ -1,4 +1,5 @@
 using UnityEngine;
+//using UnityEngine.Pool;
 
 public class Bullet : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class Bullet : MonoBehaviour
         else
         {
             //Add a pitch randomness between 0.5 and 2 to turret shots sound
-            sounds.Play("TurretShot",.5f,2f);
+            sounds.Play("TurretShot", .5f, 2f);
         }
     }
 
@@ -43,7 +44,7 @@ public class Bullet : MonoBehaviour
     {
         creationPoint = _target;
     }
-    
+
     void Update()
     {
         //Si la target n'existe pas/plus, on supprime le GO
@@ -54,7 +55,9 @@ public class Bullet : MonoBehaviour
             {
                 Explode();
             }
-            Destroy(gameObject);
+            //Destroy(gameObject);
+
+            gameObject.SetActive(false);
             return;
         }
 
@@ -84,7 +87,7 @@ public class Bullet : MonoBehaviour
         //Debug.Log(dir);
         //Debug.Log("rot: "+Quaternion.LookRotation(dir));
         //Quand on hit on fait spawn des particules
-        GameObject effectIns=(GameObject) Instantiate(impactEffect, transform.position, Quaternion.LookRotation(dir));
+        GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, Quaternion.LookRotation(dir));
         //On planifie la destruction de ces mêmes particules dans 3s longueur particle missile
         Destroy(effectIns, 3f);
 
@@ -101,7 +104,10 @@ public class Bullet : MonoBehaviour
         //Destroy(target.gameObject);
 
         //on détruit la boulette
-        Destroy(gameObject);
+
+        //Destroy(gameObject);
+
+        gameObject.SetActive(false);
     }
 
     void Explode()
@@ -115,7 +121,7 @@ public class Bullet : MonoBehaviour
 
         foreach (Collider collider in colliders)
         {
-            if(collider.tag == "Enemy")
+            if (collider.tag == "Enemy")
             {
                 Damage(collider.transform);
             }
@@ -133,7 +139,7 @@ public class Bullet : MonoBehaviour
         {
             e.TakeDamage(damage);
         }
-        
+
     }
 
     private void OnDrawGizmosSelected()
